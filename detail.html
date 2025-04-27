@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branding Strategy for Female Cosmetics</title>
+  <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inknut Antiqua', serif;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+      background: #f8f9fa;
+      padding: 10px 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav ul li {
+      font-size: 14px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .project-container {
+      background-color: white;
+      max-width: 1200px;
+      margin: 0 auto;
+      box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    }
+
+    .full-width-image {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .image-container {
+      position: relative;
+    }
+
+    .project-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    .breadcrumb {
+      padding: 20px;
+      background-color: #f8f9fa;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 14px;
+    }
+
+    .breadcrumb a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    section.project {
+      padding: 50px 20px;
+    }
+
+    section.project.blue {
+      background-color: #f0f4f8;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p, ul {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Slider Styles */
+    .project-slider {
+      position: relative;
+      overflow: hidden;
+      margin-top: 30px;
+    }
+
+    .slider-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 300%;
+    }
+
+    .slider-slide {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .slider-slide img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .slider-controls {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    .slider-dot {
+      width: 12px;
+      height: 12px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .slider-dot:hover,
+    .slider-dot.active {
+      background-color: white;
+    }
+
+    .slider-toggle {
+      display: none;
+    }
+
+    /* fix: make parent relative */
+    .project-slider {
+      position: relative;
+    }
+
+    /* Slider functionality */
+    #slide1:checked ~ .slider-wrapper .slider-container {
+      transform: translateX(0);
+    }
+
+    #slide2:checked ~ .slider-wrapper .slider-container {
+      transform: translateX(-100%);
+    }
+
+    #slide3:checked ~ .slider-wrapper .slider-container {
+      transform: translateX(-200%);
+    }
+
+    footer#contact {
+      text-align: center;
+      background: #111;
+      color: white;
+      padding: 50px 20px;
+    }
+
+    footer#contact a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="../index.html#contact">contact</a></li>
+    <li>works</li>
+    <li>experience</li> <!-- typo fixed -->
+    <li><a href="#">behance</a></li>
+    <li><a href="https://www.instagram.com/jellasadamz_?utm_source=qr&igsh=MTk0Yng3eWRhemVlMg==" target="_blank">instagram</a></li>
+    <li><a href="#">linkedin</a></li>
+  </ul>
+</nav>
+
+<div class="project-container">
+  <div class="image-container">
+    <img src="branding.jpeg" class="full-width-image" alt="Book Branding Project">
+    <h1 class="project-title">Book<br>Branding Strategy</h1>
+  </div>
+
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a> / Book Branding Strategy
+  </div>
+
+  <section class="project">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2>Project Overview</h2>
+          <p>Menciptakan identitas buku yang konsisten, mudah dikenali, dan menarik perhatian audiens yang tepat....</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2>Research & Discovery</h2>
+          <ul>
+            <li>Wawancara pengguna dengan 250+ peserta demografi target</li>
+            <li>Analisis persaingan komprehensif dari 10 merek kecantikan teratas</li>
+            <li>Pemetaan tren preferensi konsumen kecantikan dan kesehatan yang sedang berkembang</li>
+            <li>Profil psikologis segmen konsumen target</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2>Brand Identity Development</h2>
+          <ul>
+            <li>Bahasa visual minimalis namun elegan</li>
+            <li>Visual yang menarik</li>
+            <li>Branding dalam event dan promosi</li>
+            <li>Tagline yang menarik </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2>Key Outcomes</h2>
+          <ul>
+            <li>Peningkatan pengenalan merek sebesar 35%</li>
+            <li>Peningkatan keterlibatan media sosial sebesar 42%</li>
+            <li>Peningkatan penjualan lini produk sebesar 25% pada kuartal pertama</li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2>Project Gallery</h2>
+          <div class="project-slider">
+            <input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+            <input type="radio" name="slider" id="slide2" class="slider-toggle">
+            <input type="radio" name="slider" id="slide3" class="slider-toggle">
+            
+            <div class="slider-wrapper">
+              <div class="slider-container">
+                <div class="slider-slide">
+                  <img src="branding.jpeg" alt="Cosmetics Image 1">
+                </div>
+                <div class="slider-slide">
+                  <img src="branding 2.jpeg" alt="Cosmetics Image 2">
+                </div>
+                <div class="slider-slide">
+                  <img src="branding3.jpeg" alt="Cosmetics Image 3">
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-controls">
+              <label for="slide1" class="slider-dot"></label>
+              <label for="slide2" class="slider-dot"></label>
+              <label for="slide3" class="slider-dot"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer id="contact">
+  <h2>Interested in<br>learning more?<br><a href="mailto:jelitanurwahidalasadam@gmail.com">jelitanurwahidalasadam@gmail.com</a></h2>
+  <p>Designed & developed by Jelita Nurwahida 2025</p>
+</footer>
+
+</body>
+</html>
